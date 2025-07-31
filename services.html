@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive digital marketing services including SEO, Social Media Marketing, Content Creation, and PPC Advertising">
+    <title>Our Services | Digital Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation (Same as index.html) -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-blue-600">DigiMarkPro</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                    <a href="services.html" class="text-blue-600">Services</a>
+                    <a href="portfolio.html" class="text-gray-800 hover:text-blue-600">Portfolio</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600">About</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-800" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 mt-4 pb-4">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                    <a href="services.html" class="text-blue-600">Services</a>
+                    <a href="portfolio.html" class="text-gray-800 hover:text-blue-600">Portfolio</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600">About</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-blue-600 to-blue-800">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Our Services</h1>
+            <p class="text-xl text-white mb-8">Comprehensive digital solutions to grow your business</p>
+        </div>
+    </section>
+
+    <!-- Detailed Services Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <!-- SEO Service -->
+            <div class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-6">Search Engine Optimization</h2>
+                    <p class="text-gray-600 mb-6">Drive organic traffic and improve your search rankings with our comprehensive SEO services.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Keyword Research and Analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>On-Page SEO Optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Technical SEO Improvements</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Link Building Strategies</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block mt-8 bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">Get Started</a>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x400" alt="SEO Services" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+
+            <!-- Social Media Marketing -->
+            <div class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400" alt="Social Media Marketing" class="rounded-lg shadow-xl">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Social Media Marketing</h2>
+                    <p class="text-gray-600 mb-6">Build your brand presence and engage with your audience across all major social platforms.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Social Media Strategy Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Content Creation and Curation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Community Management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Social Media Advertising</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block mt-8 bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Content Marketing -->
+            <div class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-6">Content Marketing</h2>
+                    <p class="text-gray-600 mb-6">Create engaging content that resonates with your target audience and drives conversions.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Content Strategy Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Blog Writing and Management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Email Marketing Campaigns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-3"></i>
+                            <span>Video Content Creation</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block mt-8 bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">Explore More</a>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x400" alt="Content Marketing" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Our Pricing Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4">Basic</h3>
+                    <div class="text-4xl font-bold mb-6">$499<span class="text-lg text-gray-600">/mo</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Basic SEO Setup</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Social Media Management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Monthly Content Calendar</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300">Get Started</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform scale-105 border-2 border-blue-600">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 rounded-bl-lg">Popular</div>
+                    <h3 class="text-2xl font-bold mb-4">Pro</h3>
+                    <div class="text-4xl font-bold mb-6">$999<span class="text-lg text-gray-600">/mo</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Advanced SEO Optimization</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Social Media Ads Management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Content Creation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Monthly Performance Reports</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300">Get Started</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+                    <div class="text-4xl font-bold mb-6">Custom</div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Custom Strategy Development</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Dedicated Account Manager</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Priority Support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Custom Reporting</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-blue-600">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to Grow Your Business?</h2>
+            <p class="text-xl text-white mb-8">Let's create a digital strategy that drives results.</p>
+            <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">DigiMarkPro</h3>
+                    <p class="text-gray-400">Your trusted digital marketing partner.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">SEO Optimization</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Social Media</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Content Marketing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">PPC Advertising</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@digimarkpro.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Marketing St, Digital City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 DigiMarkPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../javascript/main.js"></script>
+
+</body>
+</html>

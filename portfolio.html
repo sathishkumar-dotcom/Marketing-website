@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our portfolio of successful digital marketing campaigns and projects">
+    <title>Portfolio | Digital Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-blue-600">DigiMarkPro</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                    <a href="services.html" class="text-gray-800 hover:text-blue-600">Services</a>
+                    <a href="portfolio.html" class="text-blue-600">Portfolio</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600">About</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-800" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 mt-4 pb-4">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                    <a href="services.html" class="text-gray-800 hover:text-blue-600">Services</a>
+                    <a href="portfolio.html" class="text-blue-600">Portfolio</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600">About</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-blue-600 to-blue-800">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Our Portfolio</h1>
+            <p class="text-xl text-white mb-8">Discover our successful digital marketing campaigns and projects</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-btn active bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300" data-filter="all">All</button>
+                <button class="filter-btn bg-gray-200 text-gray-800 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="seo">SEO</button>
+                <button class="filter-btn bg-gray-200 text-gray-800 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="social">Social Media</button>
+                <button class="filter-btn bg-gray-200 text-gray-800 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="content">Content</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item seo" data-category="seo">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="https://placehold.co/600x400" alt="SEO Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">E-commerce SEO Campaign</h3>
+                            <p class="text-gray-600 mb-4">Increased organic traffic by 150% in 6 months</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">SEO</span>
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">E-commerce</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item social" data-category="social">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="https://placehold.co/600x400" alt="Social Media Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Social Media Growth</h3>
+                            <p class="text-gray-600 mb-4">Doubled Instagram followers in 3 months</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Social Media</span>
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Branding</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item content" data-category="content">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="https://placehold.co/600x400" alt="Content Marketing Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Content Strategy</h3>
+                            <p class="text-gray-600 mb-4">300% increase in blog engagement</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Content</span>
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Blog</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more portfolio items with different categories -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">100+</div>
+                    <div class="text-gray-600">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">50M+</div>
+                    <div class="text-gray-600">Impressions Generated</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">85%</div>
+                    <div class="text-gray-600">Client Satisfaction</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">25+</div>
+                    <div class="text-gray-600">Industry Awards</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-blue-600">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to Start Your Project?</h2>
+            <p class="text-xl text-white mb-8">Let's create something amazing together.</p>
+            <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">DigiMarkPro</h3>
+                    <p class="text-gray-400">Your trusted digital marketing partner.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">SEO Optimization</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Social Media</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Content Marketing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">PPC Advertising</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@digimarkpro.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Marketing St, Digital City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 DigiMarkPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../javascript/main.js"></script>
+
+</body>
+</html>
